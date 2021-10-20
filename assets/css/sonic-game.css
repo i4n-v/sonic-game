@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;   
+}
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0%;
+    }
+  }
+
+#sonic-map {
+    position: absolute;
+    background-image: url('../../images/green-hill-zone.jpg');
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    -webkit-animation: slideright 600s infinite linear;
+    background-size: 75% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.sonic {
+    width: 75px;
+    height: 75px;
+    background-image: url('../../images/game-objects/sonic.gif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 150px;
+}
+
+.enemy {
+    width: 75px;
+    height: 75px;
+    background-image: url('../../images/game-objects/robotinic.png');
+    background-size: 100%;
+    position: absolute;
+    bottom: 150px;
+}
