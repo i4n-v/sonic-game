@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonic</title>
+
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/sonic-game.css">
+
     <script src="assets/js/sonic-game.js" defer></script>
-    <title>Sonic</title>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" defer></script>
 </head>
 <body>
     <main id="sonic-map">
-            <div class="sonic"></div>
+        <div class="sonic"></div>
+        <div id="score">
+            <div class="points"></div>
+            <div class="anel"></div>
+        </div>
+        <div id="game-over">
+            <div>
+                <h1>Game Over</h1>
+                <div id="current-score"></div>
+                <div id="previos-score"></div>
+                <button class="fas fa-redo"></button>
+            </div>            
+        </div>
     </main>
 </body>
 </html>

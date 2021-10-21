@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Press+Start+2P&display=swap');
+
+:root {
+    --blue: rgb(34, 34, 209);
+    --grey: rgba(128, 128, 128, 0.671);
+    --title: 'Press Start 2P', cursive;
+    --text: 'Nunito Sans', sans-serif;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -15,6 +24,7 @@
 
 #sonic-map {
     position: absolute;
+    z-index: 2;
     background-image: url('../../images/green-hill-zone.jpg');
     background-repeat: repeat-x;
     animation: slideright 600s infinite linear;
@@ -37,8 +47,86 @@
 .enemy {
     width: 75px;
     height: 75px;
-    background-image: url('../../images/game-objects/robotinic.png');
     background-size: 100%;
     position: absolute;
     bottom: 150px;
+}
+
+#game-over {
+    z-index: 3;
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+#game-over > div {
+    max-width: 500px;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue);
+}
+
+#game-over h1 {
+    font: 2em var(--title);
+    margin-bottom: 20px;
+}
+
+#game-over div > div {
+    color: var(--grey);
+    text-align: left;
+    font: 1em var(--title);
+    margin-bottom: 20px;
+}
+
+#game-over button {
+    color: var(--grey);
+    font-size: 2em;
+    padding: 15px;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.507);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .8s;
+}
+
+#game-over button:hover {
+    color: white;
+    background-color: var(--blue);
+    transform: rotate(360deg);
+}
+
+#score {
+    width: 100%;
+    max-width: 90px;
+    pad: 5px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#score .anel{
+    background-image: url('../../images/game-objects/anel.gif');
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+#score .points {
+    color: white;
+    font: 1em var(--title);
 }
