@@ -2,7 +2,7 @@
 
 > Esse projeto foi idealizado com o objetivo de ser uma replica do jogo do dinossauro que tira o nosso tédio quando estamos sem conexão com a internet, para conclusão do desafio proposto pelo Digital Innovation One. Logo, resolvi trazer a temática do ouriço azul mais rápido do mundo, Sonic!
 
-
+![sonic](https://user-images.githubusercontent.com/72396372/138204035-d55f8e6f-9b4d-48ae-b4e0-d51176a9f86d.png)
 
 ## Iniciando
 
