@@ -45,7 +45,7 @@ function jump(e) {
         sonic.isJumping = true;
 
         let upInterval = setInterval(() => {
-            if (sonic.position >= 300) {
+            if (sonic.position >= 320) {
                 clearInterval(upInterval);
 
                 let downInterval = setInterval(() => {
@@ -113,7 +113,7 @@ function moveEnemy() {
         } else {
             setMoveEnemy(enemy);
         }
-    }, 20);
+    }, 15);
 
     setTimeout(moveEnemy, randomTime);
 }

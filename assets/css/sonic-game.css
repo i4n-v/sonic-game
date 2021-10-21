@@ -108,14 +108,13 @@
 }
 
 #score {
-    width: 100%;
-    max-width: 90px;
+    max-width: 100px;
     pad: 5px;
     position: absolute;
     top: 30px;
     right: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
 }
 
@@ -124,6 +123,7 @@
     background-size: 100%;
     width: 30px;
     height: 30px;
+    margin-left: 5px;
 }
 
 #score .points {
