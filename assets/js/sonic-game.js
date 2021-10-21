@@ -102,7 +102,8 @@ function moveEnemy() {
     }
 
     let randomTime = Math.random() * 6000;
-
+    randomTime = randomTime > 2000 ? randomTime : randomTime + 1000;
+    
     createEnemy(enemy);
 
     let interval = setInterval(() => {
